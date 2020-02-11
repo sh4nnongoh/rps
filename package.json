@@ -2,58 +2,51 @@
   "name": "rps",
   "version": "0.1.0",
   "private": true,
-  "main": "app.jsx",
-  "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "^3.3.1"
-  },
   "scripts": {
-    "start": "webpack --mode development",
-    "build": "webpack --mode production",
-    "start:react": "react-scripts start",
-    "build:react": "react-scripts build",
-    "test:react": "react-scripts test",
-    "eject:react": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint:pages": "npx eslint --fix ./pages/*",
+    "cucumberjs": "./node_modules/.bin/cucumber-js",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@material-ui/core": "^4.7.2",
+    "@material-ui/icons": "^4.5.1",
+    "@tensorflow/tfjs": "^1.5.1",
+    "@tensorflow/tfjs-vis": "^1.4.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "next": "9.1.4",
+    "prop-types": "^15.7.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.4",
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
-    "@babel/preset-react": "^7.7.4",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^3.2.0",
-    "eslint": "^6.7.0",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/register": "^7.7.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "battlecry": "^0.3.6",
+    "chai": "^4.2.0",
+    "chromedriver": "^78.0.1",
+    "cucumber": "^6.0.5",
+    "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-codeceptjs": "^1.2.0",
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^23.7.0",
+    "eslint-plugin-jest": "^23.1.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-plugin-security": "^1.4.0",
-    "html-webpack-plugin": "^3.2.0",
-    "svg-inline-loader": "^0.8.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "jest-cli": "^24.9.0",
+    "selenium-webdriver": "^4.0.0-alpha.5"
   }
 }

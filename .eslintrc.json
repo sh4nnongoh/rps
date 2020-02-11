@@ -2,7 +2,8 @@
     "env": {
         "browser": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "jest/globals": true
     },
     "extends": [
         "plugin:react/recommended",
@@ -20,18 +21,39 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react", "html", "security", "codeceptjs", "jest"
+        "react",
+        "html",
+        "security",
+        "jest"
     ],
     "rules": {
-        "comma-dangle": ["error", "never"],
-        "complexity": ["warn", 20],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "complexity": [
+            "warn",
+            20
+        ],
         "no-plus-plus": "off",
-        "quotes": ["error", "double"],
-        "max-len": ["error", {
-            "code": 120
-        }],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 120
+            }
+        ],
+        "react/react-in-jsx-scope": "off",
         "react/jsx-one-expression-per-line": "off",
         "object-curly-newline": "off",
-        "linebreak-style": "off"
+        "linebreak-style": "off",
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
     }
 }
